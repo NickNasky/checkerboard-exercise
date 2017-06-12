@@ -5,11 +5,11 @@ function checkerboard() {
     space.style.width = "11.1%";
     space.style.paddingBottom = "11.1%";
     space.style.float = "left";
-    if (i % 2) {
-      space.style.backgroundColor = "red";
-    } else {
-      space.style.backgroundColor = "black";
-    }
+    var x = Math.floor(Math.random()*256);
+    var y = Math.floor(Math.random()*256);
+    var z = Math.floor(Math.random()*256);
+    space.style.backgroundColor = "rgb" + "(" + x + ", " + y + ", " + z + ")";
+    console.log(x, y, z);
   }
 }
 document.body.style.margin = "0";
